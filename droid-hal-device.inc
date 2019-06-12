@@ -338,8 +338,8 @@ mkdir tmp
 
 echo Verifying kernel config
 # AOSP seems to use .../obj/kernel/.config not obj/KERNEL_OBJ/.config like CM : so wildcard it
-hybris/mer-kernel-check/mer_verify_kernel_config \
-    %{android_root}/out/target/product/%{device}/obj/*/.config
+#hybris/mer-kernel-check/mer_verify_kernel_config \
+#    %{android_root}/out/target/product/%{device}/obj/*/.config
 
 
 ANDROID_VERSION_MAJOR=$(awk '/PLATFORM_VERSION[A-Z0-9.]* := ([0-9.]+)/ { print $3; }' \
